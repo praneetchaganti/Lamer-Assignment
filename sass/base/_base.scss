@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "NeueHaasUnicaPro-Regular";
+    src: url('../font/NeueHaasUnicaPro-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "La Mer Text";
+    src: url('../font/LaMerText-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "La Mer Headline";
+    src: url('../font/LaMerHeadline-Black.woff2') format('woff2');
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    box-sizing: border-box;
+    width: 100%;
+}
+.container {
+    font-family: 'NeueHaasUnicaPro-Regular';
+    display: grid;
+    grid-template-rows: 13.5rem 4.5rem 8.6rem max-content minmax(42rem, min-content);
+    grid-template-columns: [full-start left-start] 1fr [left-end center-start]
+    repeat(7,[col-start] minmax(min-content, 20rem) [col-end] ) [center-end right-start]1fr [right-end full-end];
+
+} 
+.left-space{
+    grid-column: left-start / left-end;
+    @media only screen and (max-width: $bp-mediun){
+        grid-row: 3/4;
+    }
+}
+.right-space{
+    grid-column: right-start / right-end;
+    @media only screen and (max-width: $bp-mediun){
+        grid-row: 3/4;
+    }
+}
+

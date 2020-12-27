@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png"
+        href="https://www.cremedelamer.com/sites/cremedelamer2/themes/cremedelamer2_base/favicon.ico">
+    <title>Bestsellers | La Mer's Best Skincare | La Mer Official Site</title>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js"
+        integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ=="
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/products.js"></script>	
+    <script src="js/ui.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header" id="header">
+            <div class="header__desktop">
+                <div class="header__no-scroll" id="no-scroll">
+                    <ul class="header__no-scroll__nav">
+                        <li class="header__no-scroll__nav__list header__no-scroll__nav__list--1"><a href="#">
+                            <select class="basic-select">
+                                <option class="language-chooser" value="en" data-url="https://www.cremedelamer.com" data-thumb-url="https://www.cremedelamer.com/media/export/cms/nav/country_chooser_flags/usa.png">
+                                    English
+                                </option>
+                                <option class="language-chooser" value="cn.,cnzh" data-url="https://cn.cremedelamer.com" data-thumb-url="https://www.cremedelamer.com/media/export/cms/nav/country_chooser_flags/usa.png">
+                                    简体中文
+                                </option>
+                            </select>
+
+                        </a></li>
+                        <li class="header__no-scroll__nav__list header__no-scroll__nav__list--2"><a href="#">EMAIL SIGN UP</a></li>
+                        <li class="header__no-scroll__nav__list header__no-scroll__nav__list--3"><a href="#">
+                            <svg id="logo" viewBox="0 0 2517 500"><title>logo icon</title><path d="M2503.8 479.3c-29.3 0-54.2-5.1-85.5-65.3-28.6-55-37-71-54.8-106-16.1-30.6-45.7-51.9-79.9-57.4 71-1.7 122.7-42.5 122.7-116.3 0-68.8-54-122.2-127.3-122.2h-257.8v12h56.1v455.1h-56.1v12h191.2v-12h-56.2v-222h37.6c54.1 0 65.7 26.6 81.3 57.6 25.7 51.5 33.8 67.7 55.7 111.5 23.2 46.3 46.7 67.2 104.8 67.2 37.9 0 81.5-2.8 81.5-2.8v-11.6h-13.3zm-262.9-233.6h-84.8v-222h84.9c61.4 0 80.9 48.6 80.9 110.3.3 60.4-19.1 111.7-81 111.7zm-405.5 233.6h-102.6v-222h36.9c55.7 0 100.8 45.1 100.8 100.8h8.9V144.9h-8.9c0 55.7-45.1 100.8-100.8 100.8h-36.9v-222h114c59.4 0 107.5 48.1 107.5 107.5h9.4v-119h-366v12h56.2v455.1h-56.2v12h385.1v-150h-9.4c0 76.2-61.8 138-138 138zm-537.1-116.7L1177.7 12.1h-144.4v12h59.7v455.2h-59.7v12h134v-12H1105V44.5L1264 500l159.3-460.2v439.5H1367v12h191.3v-12h-56.2V24.1h56.2v-12h-138.6zM237.7 479.3H135V24.1h56.2v-12H0v12h56.2v455.2H0v12h385.1v-150h-9.4c0 76.2-61.8 138-138 138zM662.9 0H641L460.2 479.5h-47.1v12h119.3v-12.2h-59l64.8-171.8h157.2l65.3 171.8h-55.4v12h181.8v-12h-42.4L662.9 0zm-120 295.5l73.9-195.9 74.4 195.9H542.9z"></path></svg>
+                        </a></li>
+                        <li class="header__no-scroll__nav__list header__no-scroll__nav__list--4"><a href="#">STORES / SPAS</a></li>
+                        <li class="header__no-scroll__nav__list header__no-scroll__nav__list--5"><a href="#">ACCOUNT</a></li>
+                        <li class="header__no-scroll__nav__list header__no-scroll__nav__list--6"><a href="#">JOIN LOYALTY</a></li>
+                        <li class="header__no-scroll__nav__list header__no-scroll__nav__list--7"><a href="#">  
+                            <span class="icon--bag-label"> ( 0 ) </span> &nbsp;
+                            <svg role="img" class="icon icon--bag" data-test-id="home_gnav_carticon">
+                                <svg id="bag" viewBox="0 0 465.9 500"><title>bag icon</title><path d="M144.8 135.3v-26.7c0-50.1 23-108.6 88.1-108.6 65 0 88.1 58.5 88.1 108.6v26.7h102.7l42 309.7c1.5 14.9-3.4 28.9-13.7 38.6-10 10.5-23.8 16.4-38.4 16.4l-362-.2c-15.7 0-30.3-6.4-39.1-17.1C2.4 472.1-2.2 457.4 1 444l41.6-308.7m18 20.3L21.1 447.7c-1.7 7.4.8 15.2 6.9 21.5 6.1 6.3 13.9 10.1 23.7 10.1h362c9 .2 17.8-3.7 23.8-10.3l.5-.5c5.8-5.2 8.5-13 7.4-21.3L406 155.4h-84.7v2.5H144.8v-2.7l-84.2.4zm172.1-135c-64.4 0-67.7 73.4-67.7 88.1v26.7h135.3v-26.7c.3-14.8-3.1-88.1-67.6-88.1z"></path></svg>
+                              </svg>
+                        </a></li>
+                    </ul>
+                    <ul class="header__no-scroll__menu">
+                        <li class="header__no-scroll__menu__list header__no-scroll__menu__list--1"><a href="#">CRÈME DE LA MER</a></li>
+                        <li class="header__no-scroll__menu__list header__no-scroll__menu__list--2"><a href="#">BEST SELLER</a></li>
+                        <li class="header__no-scroll__menu__list header__no-scroll__menu__list--3"><a href="#">FACE</a></li>
+                        <li class="header__no-scroll__menu__list header__no-scroll__menu__list--4"><a href="#">BODY</a></li>
+                        <li class="header__no-scroll__menu__list header__no-scroll__menu__list--5"><a href="#">SKINCOLOR</a></li>
+                        <li class="header__no-scroll__menu__list header__no-scroll__menu__list--6"><a href="#">HOLIDAY GIFTS</a></li>
+                        <li class="header__no-scroll__menu__list header__no-scroll__menu__list--7"><a href="#">LIVE</a></li>
+                        <li class="header__no-scroll__menu__list header__no-scroll__menu__list--8"><a href="#">COLLECTIONS</a></li>
+                        <li class="header__no-scroll__menu__list header__no-scroll__menu__list--9"><a href="#">DISCOVER</a></li>
+                        <li class="header__no-scroll__menu__list header__no-scroll__menu__list--10"><a href="#"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>
+                <div class="header__scroll" id="scroll">
+                    <ul class="header__scroll__menu">
+                     <li class="header__scroll__menu__list header__scroll__menu__list--1"><a href="#">
+                            <svg id="logo" viewBox="0 0 2517 500"><title>logo icon</title><path d="M2503.8 479.3c-29.3 0-54.2-5.1-85.5-65.3-28.6-55-37-71-54.8-106-16.1-30.6-45.7-51.9-79.9-57.4 71-1.7 122.7-42.5 122.7-116.3 0-68.8-54-122.2-127.3-122.2h-257.8v12h56.1v455.1h-56.1v12h191.2v-12h-56.2v-222h37.6c54.1 0 65.7 26.6 81.3 57.6 25.7 51.5 33.8 67.7 55.7 111.5 23.2 46.3 46.7 67.2 104.8 67.2 37.9 0 81.5-2.8 81.5-2.8v-11.6h-13.3zm-262.9-233.6h-84.8v-222h84.9c61.4 0 80.9 48.6 80.9 110.3.3 60.4-19.1 111.7-81 111.7zm-405.5 233.6h-102.6v-222h36.9c55.7 0 100.8 45.1 100.8 100.8h8.9V144.9h-8.9c0 55.7-45.1 100.8-100.8 100.8h-36.9v-222h114c59.4 0 107.5 48.1 107.5 107.5h9.4v-119h-366v12h56.2v455.1h-56.2v12h385.1v-150h-9.4c0 76.2-61.8 138-138 138zm-537.1-116.7L1177.7 12.1h-144.4v12h59.7v455.2h-59.7v12h134v-12H1105V44.5L1264 500l159.3-460.2v439.5H1367v12h191.3v-12h-56.2V24.1h56.2v-12h-138.6zM237.7 479.3H135V24.1h56.2v-12H0v12h56.2v455.2H0v12h385.1v-150h-9.4c0 76.2-61.8 138-138 138zM662.9 0H641L460.2 479.5h-47.1v12h119.3v-12.2h-59l64.8-171.8h157.2l65.3 171.8h-55.4v12h181.8v-12h-42.4L662.9 0zm-120 295.5l73.9-195.9 74.4 195.9H542.9z"></path></svg>
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--2"><a href="#" class="header__scroll__menu__link">
+                            CRÈME DE LA MER
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--3"><a href="#" class="header__scroll__menu__link">
+                            BEST SELLER
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--4"><a href="#" class="header__scroll__menu__link">
+                            FACE
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--5"><a href="#" class="header__scroll__menu__link">
+                            BODY
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--6"><a href="#" class="header__scroll__menu__link">
+                            SKINCOLOR
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--7"><a href="#" class="header__scroll__menu__link">
+                            HOLIDAY GIFTS
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--8"><a href="#" class="header__scroll__menu__link">
+                            LIVE
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--9"><a href="#" class="header__scroll__menu__link">
+                            COLLECTIONS
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--10"><a href="#" class="header__scroll__menu__link">
+                            DISCOVER
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--11"><a href="#" class="header__scroll__menu__link">
+                            <i class="fa fa-search"></i>
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--12"><a href="#" class="header__scroll__menu__link">
+                            ACCOUNT
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--13"><a href="#" class="header__scroll__menu__link">
+                            JOIN LOYALTY
+                        </a></li>
+                        <li class="header__scroll__menu__list header__scroll__menu__list--14"><a href="#" class="header__scroll__menu__link">
+                            <span class="icon--bag-label"> ( 0 ) </span> &nbsp;
+                            <svg role="img" class="icon icon--bag" data-test-id="home_gnav_carticon">
+                                <svg id="bag" viewBox="0 0 465.9 500"><title>bag icon</title><path d="M144.8 135.3v-26.7c0-50.1 23-108.6 88.1-108.6 65 0 88.1 58.5 88.1 108.6v26.7h102.7l42 309.7c1.5 14.9-3.4 28.9-13.7 38.6-10 10.5-23.8 16.4-38.4 16.4l-362-.2c-15.7 0-30.3-6.4-39.1-17.1C2.4 472.1-2.2 457.4 1 444l41.6-308.7m18 20.3L21.1 447.7c-1.7 7.4.8 15.2 6.9 21.5 6.1 6.3 13.9 10.1 23.7 10.1h362c9 .2 17.8-3.7 23.8-10.3l.5-.5c5.8-5.2 8.5-13 7.4-21.3L406 155.4h-84.7v2.5H144.8v-2.7l-84.2.4zm172.1-135c-64.4 0-67.7 73.4-67.7 88.1v26.7h135.3v-26.7c.3-14.8-3.1-88.1-67.6-88.1z"></path></svg>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__mobile">
+                    <ul class="header__mobile__nav">
+                        <li class="header__mobile__nav__list header__mobile__nav__list--1"><a href="#">
+                                <span class="menu-icons"></span>
+                            </a></li>
+                            <li class="header__mobile__nav__list header__mobile__nav__list--2"><a href="#">
+                                <svg id="logo" viewBox="0 0 2517 500"><title>logo icon</title><path d="M2503.8 479.3c-29.3 0-54.2-5.1-85.5-65.3-28.6-55-37-71-54.8-106-16.1-30.6-45.7-51.9-79.9-57.4 71-1.7 122.7-42.5 122.7-116.3 0-68.8-54-122.2-127.3-122.2h-257.8v12h56.1v455.1h-56.1v12h191.2v-12h-56.2v-222h37.6c54.1 0 65.7 26.6 81.3 57.6 25.7 51.5 33.8 67.7 55.7 111.5 23.2 46.3 46.7 67.2 104.8 67.2 37.9 0 81.5-2.8 81.5-2.8v-11.6h-13.3zm-262.9-233.6h-84.8v-222h84.9c61.4 0 80.9 48.6 80.9 110.3.3 60.4-19.1 111.7-81 111.7zm-405.5 233.6h-102.6v-222h36.9c55.7 0 100.8 45.1 100.8 100.8h8.9V144.9h-8.9c0 55.7-45.1 100.8-100.8 100.8h-36.9v-222h114c59.4 0 107.5 48.1 107.5 107.5h9.4v-119h-366v12h56.2v455.1h-56.2v12h385.1v-150h-9.4c0 76.2-61.8 138-138 138zm-537.1-116.7L1177.7 12.1h-144.4v12h59.7v455.2h-59.7v12h134v-12H1105V44.5L1264 500l159.3-460.2v439.5H1367v12h191.3v-12h-56.2V24.1h56.2v-12h-138.6zM237.7 479.3H135V24.1h56.2v-12H0v12h56.2v455.2H0v12h385.1v-150h-9.4c0 76.2-61.8 138-138 138zM662.9 0H641L460.2 479.5h-47.1v12h119.3v-12.2h-59l64.8-171.8h157.2l65.3 171.8h-55.4v12h181.8v-12h-42.4L662.9 0zm-120 295.5l73.9-195.9 74.4 195.9H542.9z"></path></svg>
+                            </a></li>
+                            <li class="header__mobile__nav__list header__mobile__nav__list--3"><a href="#">
+                                <span class="icon--bag-label"> ( 0 ) </span> &nbsp;
+                                <svg role="img" class="icon icon--bag" data-test-id="home_gnav_carticon">
+                                    <svg id="bag" viewBox="0 0 465.9 500"><title>bag icon</title><path d="M144.8 135.3v-26.7c0-50.1 23-108.6 88.1-108.6 65 0 88.1 58.5 88.1 108.6v26.7h102.7l42 309.7c1.5 14.9-3.4 28.9-13.7 38.6-10 10.5-23.8 16.4-38.4 16.4l-362-.2c-15.7 0-30.3-6.4-39.1-17.1C2.4 472.1-2.2 457.4 1 444l41.6-308.7m18 20.3L21.1 447.7c-1.7 7.4.8 15.2 6.9 21.5 6.1 6.3 13.9 10.1 23.7 10.1h362c9 .2 17.8-3.7 23.8-10.3l.5-.5c5.8-5.2 8.5-13 7.4-21.3L406 155.4h-84.7v2.5H144.8v-2.7l-84.2.4zm172.1-135c-64.4 0-67.7 73.4-67.7 88.1v26.7h135.3v-26.7c.3-14.8-3.1-88.1-67.6-88.1z"></path></svg>
+                                </svg>
+                            </a></li>
+                        </ul>
+                        <div class="header__mobile__search">
+                            <input type="search" class="form-control-search" placeholder="SEARCH">
+                            <i class="fa fa-search"></i>
+                        </div>
+                </div>
+        </header>
+        <section class="notification">
+            <div class="notification__icon-left"><i class="fa fa-chevron-left move js-move"  aria-hidden="true"></i></div>
+            <div class="notification__content">
+                <div class="notification__content-a js-notification-content-a">Complimentary Shipping, Gift Wrap & Samples with Every Order.</div>
+                <div class="notification__content-b js-notification-content-b">12 Days, 12 Indulgences <a href="#">Reveal today's surprise offer</a></div>
+            </div>
+            <div class="notification__icon-right"><i class="fa fa-chevron-right move js-move"  aria-hidden="true"></i></div>
+        </section>
+
+        <section class="sort">
+            <select class="sort__select" id="sort__select">
+                <option value="">SORT BY:</option>
+                <option value="PRICELOWTOHIGH">PRICE (LOW TO HIGH)</option>
+                <option value="PRICEHIGHTOLOW">PRICE (HIGH TO LOW)</option>
+                <option value="HIGHESTRATED">HIGHEST RATED</option>
+            </select>
+        </section>
+        <section class="left-space"></section>
+        <section class="side-nav">
+            <div class="side-nav__toggle">
+                <div class="side-nav__toggle__select js-side-nav-toggle-select">Filter</div>
+            </div>
+            <div class="side-nav__menu js-side-nav-menu">
+                <div class="side-nav__menu__count"><span class="side-nav__menu__count__text js-side-nav-menu-count-text"></span><span class="side-nav__menu__count__button js-side-nav-menu-count-button"></span></div>
+                <div class="side-nav__menu__category">
+                    <div class="side-nav__menu__category__title">
+                        <input type="checkbox" id="CATEGORY"> <label for="CATEGORY">CATEGORY</label> 
+                    </div>
+                    <ul class="side-nav__menu__category__list js-side-nav-menu-category-list">
+                        <li class="side-nav__menu__category__list__item side-nav__menu__category__list__item--1">
+                               <input type="checkbox" id="MOISTURIZERS"> <label for="MOISTURIZERS">MOISTURIZERS</label> 
+                        </li>
+                        <li class="side-nav__menu__category__list__item side-nav__menu__category__list__item--2">
+                            <input type="checkbox" id="EYETREATMENTS"> <label for="EYETREATMENTS">EYE TREATMENTS</label> 
+                        </li>
+                        <li class="side-nav__menu__category__list__item side-nav__menu__category__list__item--3">
+                            <input type="checkbox" id="SERUMS"> <label for="SERUMS">SERUMS</label> 
+                        </li>
+                        <li class="side-nav__menu__category__list__item side-nav__menu__category__list__item--4">
+                            <input type="checkbox" id="WATERYLOTIONS"> <label for="WATERYLOTIONS">WATERY LOTIONS</label> 
+                        </li>
+                        <li class="side-nav__menu__category__list__item side-nav__menu__category__list__item--5">
+                            <input type="checkbox" id="CLEANSERSANDTONERS"> <label for="CLEANSERSANDTONERS">CLEANSERS AND TONERS</label> 
+                        </li>
+                        <li class="side-nav__menu__category__list__item side-nav__menu__category__list__item--6">
+                            <input type="checkbox" id="SPECIALISTS"> <label for="SPECIALISTS">SPECIALISTS</label> 
+                        </li>
+                        <li class="side-nav__menu__category__list__item side-nav__menu__category__list__item--7">
+                            <input type="checkbox" id="COLOR"> <label for="COLOR">COLOR</label> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="side-nav__menu__benefits">
+                    <div class="side-nav__menu__benefits__title">
+                        <input type="checkbox" id="BENEFIT"> <label for="BENEFIT">BENEFIT</label> 
+                    </div>
+                    <ul class="side-nav__menu__benefits__list js-side-nav-menu-benefits-list">
+                        <li class="side-nav__menu__benefits__list__item side-nav__menu__benefits__list__item-1">
+                            <input type="checkbox" id="ANTIINFLAMMATION"> <label for="ANTIINFLAMMATION">ANTI-INFLAMMATION / SOOTHING</label> 
+                        </li>
+                        <li class="side-nav__menu__benefits__list__item side-nav__menu__benefits__list__item-2">
+                            <input type="checkbox" id="UNEVENSKINTONE"> <label for="UNEVENSKINTONE">UNEVEN SKINTONE</label> 
+                        </li>
+                        <li class="side-nav__menu__benefits__list__item side-nav__menu__benefits__list__item-3">
+                            <input type="checkbox" id="LINES"> <label for="LINES">LINES / WRINKLES</label> 
+                        </li>
+                        <li class="side-nav__menu__benefits__list__item side-nav__menu__benefits__list__item-4">
+                            <input type="checkbox" id="EARLYSIGNSOFAGING"> <label for="EARLYSIGNSOFAGING">EARLY SIGNS OF AGING</label> 
+                        </li>
+                        <li class="side-nav__menu__benefits__list__item side-nav__menu__benefits__list__item-5">
+                            <input type="checkbox" id="ANTIOXIDANTPROTECTION"> <label for="ANTIOXIDANTPROTECTION">ANTIOXIDANT PROTECTION</label> 
+                        </li>
+                        <li class="side-nav__menu__benefits__list__item side-nav__menu__benefits__list__item-6">
+                            <input type="checkbox" id="DARKCIRCLES"> <label for="DARKCIRCLES">DARK CIRCLES</label> 
+                        </li>
+                        <li class="side-nav__menu__benefits__list__item side-nav__menu__benefits__list__item-7">
+                            <input type="checkbox" id="CLEANSING"> <label for="CLEANSING">CLEANSING / TONING</label> 
+                        </li>
+                        <li class="side-nav__menu__benefits__list__item side-nav__menu__benefits__list__item-8">
+                            <input type="checkbox" id="COLORCOVERAGE"> <label for="COLORCOVERAGE">COLOR COVERAGE</label> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="side-nav__buttons js-side-nav-buttons">
+                <button class="side-nav__buttons__clearall js-side-nav-buttons-clearall">CLEAR ALL</button>
+                <button class="side-nav__buttons__apply js-side-nav-buttons-apply">APPLY</button>
+            </div>
+        </section>
+        <main class="main">
+            <div class="main__grid js-main-grid"> 
+            </div>
+        </main>
+        <section class="right-space"></section>
+        
+        
+        <footer class="footer">
+            <div class="footer__shop">
+                <h3 class="footer__heading">SHOP</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Crème de la Mer</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Bestsellers</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Gifts</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Shop All Products</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Today's Offer</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Waves de La Mer Loyalty</a></li>
+                </ul>
+                <div class="form-group mt-2">
+                    <select class="form-control-select">
+                        <option>Choose Location</option>
+                        <option>Afghanistan</option>
+                        <option>Albania</option>
+                        <option>Argentina</option>
+                        <option>Bahrain</option>
+                        <option>Iran (Islamic Republic of)</option>
+                        <option>India</option>
+                    </select>
+                </div>
+            </div>
+            <div class="footer__nav">                
+                <h3 class="footer__heading">HOW CAN WE HELP?</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Customer Service</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Shipping</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Returns</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Find a Store</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">La Mer Corporate</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Accessibility</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__form">
+                <h3 class="footer__heading text-center">SIGN UP</h3>
+                <form action="#" class="form--1">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="EMAIL ADDRESS">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="MOBILE NUMBER">
+                    </div>
+
+                </form>
+            </div>
+            <div class="footer__copy">&copy; La Mer Technology, Inc.</div>
+            <div class="footer__terms">
+                <ul class="footer__listr">
+                    <li class="footer__listr-item"><a href="#" class="footer__listr-link">Interest-Based Ads</a></li>
+                    <li class="footer__listr-item"><a href="#" class="footer__listr-link">California Do Not Sell My Personal Information.</a></li>
+                    <li class="footer__listr-item"><a href="#" class="footer__listr-link">Returns</a></li>
+                    <li class="footer__listr-item"><a href="#" class="footer__listr-link">Terms and Conditions</a></li>
+                    <li class="footer__listr-item"><a href="#" class="footer__listr-link">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <a class="back-to-top" id="back-to-top" href="#header"></a>
+</body>
+
+</html>

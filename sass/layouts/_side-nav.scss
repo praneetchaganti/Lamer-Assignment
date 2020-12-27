@@ -1,0 +1,268 @@
+.side-nav{
+    
+    grid-column: col-start 1 / col-end 1;
+    @media only screen and (max-width: $bp-mediun){
+        grid-row: 3/4;
+        grid-column: 1/ col-end 3;
+        position: relative;
+        display: grid;
+        align-items: center;
+        justify-content: end;
+    }
+    &__menu {
+        
+        width: 100%;
+        font-size: 1.2rem;
+        font-family: $font-family-neu;
+        display: flex;
+        flex-direction: column;
+        @media only screen and (max-width: $bp-mediun){
+            background-color: $color-bg-secondary;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            z-index: 999999;
+            overflow: auto;
+            padding: 2rem;
+    
+        }
+        &__count {
+            padding: 2rem;
+            border-bottom: 1px solid gray;
+            flex: 1;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr min-content;
+         
+            &__text {
+                display: inline-block;
+               
+                @media only screen and (max-width: $bp-mediun){
+                    &::before {
+                        content: "FILTER BY:";
+                        margin-right: 70%;
+                    }
+                }
+            }
+            &__button {
+                background-color: yellow;
+                position: relative;
+                top: 60%;
+                right: 0;
+                display: none;
+                cursor: pointer;
+                @media only screen and (max-width: $bp-mediun){ 
+                    display: inline-block;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    background-color: $color-primary;
+                    position: absolute;
+                    top: 50%;
+                    right: 2rem;
+                    width: 1px;
+                    height: 2rem;
+                    transform-origin: center;
+                    transform: translateY(-50%) translateX(3rem) rotate(45deg);
+                }
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    background-color: $color-primary;
+                    position: absolute;
+                    top: 50%;
+                    right: 2rem;
+                    height: 1px;
+                    width: 2rem;
+                    transform-origin: center;
+                    transform: translateY(-50%) translateX(4rem) rotate(45deg);
+                }
+            }
+        }
+        &__category {
+            border-bottom: 1px solid gray;
+            flex: 2;
+        }
+        &__benefits {
+            border-bottom: 1px solid gray;
+            flex: 2;
+        }
+        &__category__title,&__benefits__title {
+            
+            font-weight: bold;
+            input[type="checkbox"] {
+                display: none;
+            }
+            &:hover {
+                color: $color-secondary;
+            }
+            input:checked+label{
+                    &::after{
+                        display: none;
+                    }
+                    
+            }
+
+            label {
+                display: inline-block;
+                padding: 2rem;
+                width: 100%;
+                position: relative;
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    background-color: $color-primary;
+                    position: absolute;
+                    top: 50%;
+                    right: 2rem;
+                    width: 1px;
+                    height: 1rem;
+                    transform: translateY(-50%) translateX(-.45rem);
+                    
+                }
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    background-color: $color-primary;
+                    position: absolute;
+                    top: 50%;
+                    right: 2rem;
+                    height: 1px;
+                    width: 1rem;
+                    transform: translateY(-50%);
+
+                }
+            }
+        }
+        &__category__list,&__benefits__list {
+            display: none;
+            padding: 0;
+            list-style-type: none;
+            @media only screen and (max-width: $bp-mediun){ 
+                width: 100%;
+                background-color: white;
+                border: 1px solid #dddddd;
+              
+            }
+            
+        }
+        &__category__list__item,&__benefits__list__item {
+            @media only screen and (max-width: $bp-mediun){ 
+                &:not(:last-child) {
+                    border-bottom: .5px solid #dddddd;
+                }
+            }
+            label {
+                display: block;
+                padding: 2rem;
+                margin-bottom: 1rem;
+            }
+            input[type="checkbox"] {
+                display: none;
+            }
+            &:hover {
+                color: $color-secondary;
+            }
+            input:checked+label{
+                border: 1px solid rgba($color-primary-light-2,.5);  
+                position: relative;
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    background-color: $color-primary;
+                    position: absolute;
+                    top: 20%;
+                    right: 1rem;
+                    width: 1px;
+                    height: 1rem;
+                    transform: translateY(-50%) translateX(-.45rem) rotate(45deg);
+                    
+                }
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    background-color: $color-primary;
+                    position: absolute;
+                    top: 20%;
+                    right: 1rem;
+                    height: 1px;
+                    width: 1rem;
+                    transform: translateY(-50%) rotate(45deg);
+                }
+            }
+            
+        }
+    }
+    &__toggle {
+        display: none;
+        width: 15rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+        height: 36px;
+        border-radius: .5rem;
+        border: 1px solid #dddddd;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba($color-primary-light-2,.3);
+        transform: translateX(35%);
+        @media only screen and (max-width: $bp-small){ 
+            transform: translateX(20%);
+        }
+        cursor: pointer;
+        @media only screen and (max-width: $bp-mediun){  
+            display: inline-block;
+        }
+        position: relative;
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    background-color: $color-primary;
+                    position: absolute;
+                    top: 50%;
+                    right: 1rem;
+                    width: 1px;
+                    height: 1rem;
+                    transform: translateY(-50%) translateX(-.45rem);
+                }
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    background-color: $color-primary;
+                    position: absolute;
+                    top: 50%;
+                    right: 1rem;
+                    height: 1px;
+                    width: 1rem;
+                    transform: translateY(-50%);
+                }
+    }
+    &__buttons {
+        
+        width: 90%;
+        position: fixed;
+        bottom: 0;
+        display: none;
+        
+        margin: 2rem;
+        z-index: 999999;
+        &__clearall {
+            flex: 1;
+        
+        }
+        &__apply {
+            flex: 1;
+            background-color: black;
+            color: white;
+        }
+        &__clearall, &__apply {
+            border: none;
+            padding: 1rem 5rem;
+            margin: .5rem;
+        }
+    }
+}

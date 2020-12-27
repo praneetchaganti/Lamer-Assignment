@@ -1,0 +1,132 @@
+[
+  {
+    "title": "The Cleansing Foam",
+    "type": "CLEANSING / TONING",
+    "description": "Delicate foam purifies and revitalizes",
+    "filename": "./img/The Cleansing Foam.jpg",
+    "filename-back": "./img/The Cleansing Foam 2.jpg",
+    "price": 25,
+    "rating": 5
+  },
+  {
+    "title": "The Eye Concentrate",
+    "type": "Eye treatments",
+    "description": "Reduce the look of dark circles for a brighter, healthier look",
+    "filename": "./img/The Eye Concentrate.jpg",
+    "filename-back": "./img/The Eye Concentrate 2.jpg",
+    "price": 235,
+    "rating": 5
+  },
+  {
+    "title": "The Moisturizing Cool Gel Cream",
+    "type": "Moisturizers",
+    "description": "Light gel, calms and refreshes. Velvet finish.",
+    "filename": "./img/The Moisturizing Cool Gel Cream.jpg",
+    "filename-back": "./img/The Moisturizing Cool Gel Cream 2.jpg",
+    "height": 600,
+    "width": 399,
+    "price": 95,
+    "rating": 4
+  },
+  {
+    "title": "The Cleansing Micellar Water",
+    "type": "Cleansers and toners",
+    "description": "Rinseless cleanse, removes waterproof makeup",
+    "filename": "./img/The Cleansing Micellar Water.jpg",
+    "filename-back": "./img/The Cleansing Micellar Water 2.jpg",
+    "price": 55,
+    "rating": 3
+  },
+  {
+    "title": "The Concealer",
+    "type": "color",
+    "description": "Medium to full coverage with youth-boosting antioxidants.",
+    "filename": "./img/The Concealer.jpg",
+    "filename-back": "./img/The Concealer 2.jpg",
+    "height": 450,
+    "width": 675,
+    "price": 85,
+    "rating": 5
+  },
+  {
+    "title": "The Concentrate",
+    "type": "Serums",
+    "description": "Barrier serum to strengthen, visibly soothe and protect.",
+    "filename": "./img/The Concentrate.jpg",
+    "filename-back": "./img/The Concentrate 2.jpg",
+    "price": 200,
+    "rating": 5
+  },
+  {
+    "title": "The Regenerating Serum",
+    "type": "Serums",
+    "description": "Visibly diminishes lines and wrinkles.",
+    "filename": "./img/The Regenerating Serum.jpg",
+    "filename-back": "./img/The Regenerating Serum 2.jpg",
+    "price": 375,
+    "rating": 5
+  },
+  {
+    "title": "The Renewal Oil",
+    "type": "Specialists",
+    "description": "Nourishes and softens for an instant glow",
+    "filename": "./img/The Renewal Oil.jpg",
+    "filename-back": "./img/The Renewal Oil 2.jpg",
+    "price": 135,
+    "rating": 4
+  },
+  {
+    "title": "The Hydrating Illuminator",
+    "type": "color",
+    "description": "Highlight, brighten and energize for a lit-from-within glow",
+    "filename": "./img/The Hydrating Illuminator.jpg",
+    "filename-back": "./img/The Hydrating Illuminator 2.jpg",
+    "price": 80,
+    "rating": 4
+  },
+  {
+    "title": "The Lip Volumizer",
+    "type": "Lip",
+    "description": "Soften, smooth and plump with hydration for visibly fuller lips",
+    "filename": "./img/The Lip Volumizer.jpg",
+    "filename-back": "./img/The Lip Volumizer 2.jpg",
+    "price": 80,
+    "rating": 4
+  },
+  {
+    "title": "The Moisturizing Soft Cream",
+    "type": "Moisturizers",
+    "description": "Deeply hydrates and comforts",
+    "filename": "./img/The Moisturizing Soft Cream.jpg",
+    "filename-back": "./img/The Moisturizing Soft Cream 2.jpg",
+    "price": 95,
+    "rating": 5
+  },
+  {
+    "title": "The Soft Fluid Long Wear Foundation Broad Spectrum SPF 20",
+    "type": "color",
+    "description": "Hydrates and nourishes with buildable coverage, luminous finish",
+    "filename": "./img/The Soft Fluid Long Wear Foundation Broad Spectrum SPF 20.jpg",
+    "filename-back": "./img/The Soft Fluid Long Wear Foundation Broad Spectrum SPF 20 2.jpg",
+    "price": 125,
+    "rating": 4
+  },
+  {
+    "title": "The Treatment Lotion",
+    "type": "Prep",
+    "description": "Hydrates, energizes and preps",
+    "filename": "./img/The Treatment Lotion.jpg",
+    "filename-back": "./img/The Treatment Lotion 2.jpg",
+    "price": 115,
+    "rating": 5
+  },
+  {
+    "title": "The Treatment Lotion Hydrating Mask",
+    "type": "Masks",
+    "description": "Portable sheet mask for a concentrated surge of hydration and energy.",
+    "filename": "./img/The Treatment Lotion Hydrating Mask.jpg",
+    "filename-back": "./img/The Treatment Lotion Hydrating Mask 2.jpg",
+    "price": 165,
+    "rating": 4
+  }
+]

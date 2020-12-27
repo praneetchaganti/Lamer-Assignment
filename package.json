@@ -1,0 +1,31 @@
+{
+  "name": "lamer-assignment",
+  "version": "1.0.0",
+  "description": "My Company Assignment on mustache js and sass",
+  "main": "index.html",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "lite-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "test": "test",
+    "lint": "eslint"
+  },
+  "author": "Indira",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "node-sass": "^5.0.0",
+    "webpack": "^5.10.0"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "mustache": "^4.1.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "keywords": []
+}

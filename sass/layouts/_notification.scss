@@ -1,0 +1,53 @@
+.notification {
+    background-color: $color-bg-secondary;
+    grid-column: full-start / full-end;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    font-size: 1.2rem;
+    color: $color-primary;
+    &__icon-right {
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        transform: translateY(-50%);
+        i {
+            cursor: pointer;
+            color: $color-primary-light-2;
+        }
+    }
+    &__icon-left { 
+        position: absolute;
+        left:2%;
+        top: 50%;
+        transform: translateY(-50%);
+        i {
+            cursor: pointer;
+            color: $color-primary-light-2;
+        }
+    }
+    &__content {
+        display: inline-block;
+        width: 79.5%;
+    }    
+    &__content-a {
+        position: absolute;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%,-50%);
+           opacity: 0;
+        }
+    &__content-b {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%); 
+        
+        a {
+            color: $color-primary;
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+}

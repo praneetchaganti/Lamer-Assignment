@@ -1,0 +1,15 @@
+.back-to-top{
+    position: fixed;
+    top: 60%;
+    right: 2%;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url('/up-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #dddddd;
+    transition: all 2s;
+}
